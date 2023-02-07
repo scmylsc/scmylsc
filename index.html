@@ -19,7 +19,8 @@
         
         <nav class="navbar" id="navbar">
             <div class="main-content">
-               <li onclick="test()" class="toplia"><a href="">ORDER NOW<span class="fa fa-angle-right"></span></a></li>
+                <li><a href="#">HOME<span class="fa fa-angle-right"></span></a></li>
+               <li onclick="test()" class="toplia"><a href="" onclick="navigate_ordernow()">ORDER NOW<span class="fa fa-angle-right"></span></a></li>
                <li onclick="test()"><a onclick="test()">MENU</MENU> <span class="fa fa-angle-right"></span></a></li>
                 <li onclick="test()"><a onclick="test()">ORDERS<span class="fa fa-angle-right"></span></a></li>
                 <li onclick="test()"><a onclick="test()">ABOUT US<span class="fa fa-angle-right"></span></a></li>
@@ -27,7 +28,7 @@
                 <li onclick="test()"><a onclick="test()">SIGN UP<span class="fa fa-angle-right"></span></a></li>
             </div>
             <div class="main2-content">
-                <a onclick="test()" class="label11">ORDER ONLINE</a>
+                <a onclick="navigate_ordernow()" class="label11" >ORDER ONLINE</a>
                 <a onclick="test()" class="label12">DOWNLOAD APP</a>
                 <p class="appdiscounts">GET EXCLUSIVE APP DISCOUNTS</p>
             </div>
@@ -60,7 +61,7 @@
        
     </div>
     <div class="bottom-nav1">
-        <button onclick="test()" class="order-nowbu">PLACE ORDER</button>
+        <button onclick="navigate_ordernow()" class="order-nowbu">PLACE ORDER</button>
     </div>
     <div class="img-scrolling">
         <marquee class="marque-scrolling" behavior="alternate">
@@ -134,14 +135,14 @@
     
     <div class="bottom1-div">
         <img onclick="test()" class="book-table-img" src="img/NEAT_SITTING.jpg" width="100%" height="200">
-        <label onclick="test()" onclick="test()" class="book-your-tabel">BOOK YOUR TABLE</label>
+        <label onclick="navigate_ordernow()"class="book-your-tabel">BOOK YOUR TABLE</label>
     </div>
     <div class="bottom2-div">
         <label >PLACE YOUR DELIVERY IN WHATSAPP</label>
         <input class="fa fa-user" id="phonenumbertext" type="text" placeholder="ENTER YOUR WAHTSAPP NO"><span class="fa fa-user"></span>
     </div>
     <div onclick="sendmsg()" class="place-orderbu">
-        <button>PLACE ORDER</button>
+        <button onclick="check()">PLACE ORDER</button>
     </div>
     <label onclick="sendmsgbu()" id="whatsapp-icon" class="fa fa-whatsapp"></label>
     <div class="copyright-strike"> 

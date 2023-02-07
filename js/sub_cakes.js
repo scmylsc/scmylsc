@@ -40,7 +40,7 @@ function choco(){
     var1 = document.getElementById("sub_cake_1").src="../img/CAKES/cake3.jpg";
     var2 = document.getElementById("sub_cake_2").src="../img/CAKES/onebytwo.jpeg";
     var3 = document.getElementById("sub_cake_3").src="../img/CAKES/copy.jpeg";
-
-    
-
+}
+function navigate_home(){
+    window.location.href = "../index.html";
 }

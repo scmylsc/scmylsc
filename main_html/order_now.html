@@ -13,6 +13,7 @@
         
         <nav class="navbar" id="navbar">
             <div class="main-content">
+                <li><a onclick="navigate_home()">HOME<span class="fa fa-angle-right"></span></a></li>
                <li onclick="test()" class="toplia"><a href="">ORDER NOW<span class="fa fa-angle-right"></span></a></li>
                <li onclick="test()"><a onclick="test()">MENU</MENU> <span class="fa fa-angle-right"></span></a></li>
                 <li onclick="test()"><a onclick="test()">ORDERS<span class="fa fa-angle-right"></span></a></li>
@@ -53,14 +54,51 @@
         
        
     </div>
+
+    
+
     <div class="bottom-nav1">
         <button onclick="test()" class="order-nowbu">PLACE ORDER</button>
     </div>
-    <div>
-        <div>
-            
+    <div class="img_food">
+        <div class="img_sub_food">
+            <img src="../img/super-delicious-food.jpeg" width="100%" height="200">
         </div>
     </div>
 
+    <div class="get_call">
+        <div class="get_call_sub">
+            <label>
+                ORDER WHAT YOU WANT
+            </label></br>
+            <input onclick="check()" type="button" value="GET CALL">
+        </div>
+    </div>
+
+    <div class="hint_label">
+        <div class="sub_hint_div">
+            <label>PLACE YOUR DELIVERY IN ONLINE BY ENTERING YOUR NUMBER IN THE BELOW TEXT FIELD AND PRESS 
+                THE SEND BUTTON
+            </label>
+        </div>
+    </div>
+    <div class="bottom2-div">
+        <label >PLACE YOUR DELIVERY IN WHATSAPP</label>
+        <input class="fa fa-user" id="phonenumbertext" type="text" placeholder="ENTER YOUR WAHTSAPP NO"><span class="fa fa-user"></span>
+    </div>
+    <div onclick="sendmsg()" class="place-orderbu">
+        <button>PLACE ORDER</button>
+    </div>
+    <label onclick="sendmsgbu()" id="whatsapp-icon" class="fa fa-whatsapp"></label>
+    <div class="copyright-strike"> 
+        <label class="copyright-strike">Copyright © 2023 SHAIK AFRID , All Rights Reserved.</label>
+    </div>
+
 </body>
+<script>
+    window.addEventListener('load', function(e){
+      document.getElementById('defaultOpen').click();
+    });
+  </script>
+  <script src='../js/order_now.js'></script>
 </html>
