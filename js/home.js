@@ -45,12 +45,49 @@ function test(){
     const scrollingElement = (document.scrollingElement || document.body);
     scrollingElement.scrollTop = scrollingElement.scrollHeight;
 }
-function navigate(){
-    document.getElementById("cake_img");
-    window.location.href = 'main_html/sub_cakes.html';
 
+
+function navigate(classname){
+   
+    if(classname == "one11"){
+        window.location.href = 'main_html/sub_biriyani.html';
+    }
+    else if(classname == "one22"){
+        window.location.href = 'main_html/sub_firedrice.html';
+    }
+    else if(classname == "one33"){
+       window.location.href = 'main_html/sub_starters.html';
+    }
+    else if(classname == "one44"){
+        window.location.href = 'main_html/sub_pulka.html';
+    }
+    else if(classname == "one55"){
+        window.location.href = 'main_html/sub_pizza.html';
+    }
+    else if(classname == "one66"){
+        window.location.href = 'main_html/sub_sweets.html';
+    }
+    else if(classname == "one77"){
+        window.location.href = 'main_html/sub_cakes.html';
+    }
+    else if(classname == "one88"){
+        window.location.href = 'main_html/sub_shawarma.html';
+    }
+    else{
+        window.location.href = 'main_html/sub_mandi.html';
+    }
+   
 }
+
+/*
+function navigate1(classname){
+    alert(classname);
+}*/
+
+
+
 function navigate_ordernow(){
     document.getElementById("");
     window.location.href = 'main_html/order_now.html';
 }
+

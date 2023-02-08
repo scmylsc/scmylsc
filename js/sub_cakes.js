@@ -18,10 +18,21 @@ function opennav(){
 
 }
 function sendmsg(){
+
     var phone_number = document.getElementById("phonenumbertext").value;
     var link = "https://wa.me/"+phone_number;
-    window.open(link);
+    if(phone_number == ""){
+        alert("PLEASE ENTER YOUR PHONE NUMBER IN TEXT FIELD");
+    }
+    else if(phone_number.toString().length <10){
+        alert("PLEASE ENTER CORRECT NUMBER");
+    }
+    else{
+        window.open(link);
+    }
+    
 }
+
 function sendmsgbu(){
     var link = "https://wa.me/"+"9390558027";
     window.open(link);
